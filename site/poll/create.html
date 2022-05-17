@@ -1,0 +1,98 @@
+<div class="card">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="client.js"></script>
+  <link rel="stylesheet" href="fifth.css">
+
+
+  <h2>Create a Poll+</h2>
+  <div class="row">
+    <div class="col">
+      <div class="form-group">
+        <label>
+          <h3 class="pl-name">Poll Title</h3>
+        </label>
+        <input type="text" id="pl-input" name="fname" value="">
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="form-group">
+        <label>
+          <h3 for="count">Party Count</h3>
+        </label>
+        <input type="text" id="count" pattern="[0-9]*" value="">
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="form-group">
+        <label>
+          <h3 for="compid-inp">Computation ID</h3>
+        </label>
+        <input type="text" id="compid-inp" value="">
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="form-group">
+        <label>
+          <h3 for="usersid-inp">User ID List</h3>
+        </label>
+        <input type="text" id="usersid-inp" value="">
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="form-group">
+        <label>
+          <h3 for="time">Time in minutes</h3>
+        </label>
+        <input type="text" id="time" pattern="[0-9]*" value="">
+      </div>
+    </div>
+
+    <div class="row"></div>
+    <div class="col">
+      <div class="form-group">
+        <label>
+          <h3 class="cn-names">Option One</h3>
+        </label>
+        <input type="text" id="option-one-input" name="cn1" value="">
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="form-group">
+        <label>
+          <h3 class="cn-names">Option Two</h3>
+        </label>
+        <input type="text" id="option-two-input" name="cn1" value="">
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="form-group">
+        <label>
+          <h3 class="cn-names">Option Three</h3>
+        </label>
+        <input type="text" id="option-three-input" name="cn1" value="">
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="form-group">
+        <label>
+          <h3 class="cn-names">Option Four</h3>
+        </label>
+        <input type="text" id="option-four-input" name="cn1" value="">
+      </div>
+    </div>
+
+    <br /><br />
+    <div class="col">
+      <input type="submit" value="Save" class="btn save-btn" id="savedButton" onclick="saveButton();">
+
+    </div>
+  </div>
+</div>
+</div>

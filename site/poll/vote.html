@@ -1,0 +1,82 @@
+<html>
+
+  <head>
+    <title>Poll+</title>
+    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+    <script src="/dist/jiff-client.js"></script>
+    <link rel="stylesheet" href="second.css">
+    <link rel="stylesheet" href="third.scss">
+    <link rel="stylesheet" href="fourth.scss">
+    <script type="text/javascript" src="client.js"></script>
+    <script type="text/javascript" src="./mpc.min.js"></script>
+    
+  </head>
+
+  <style>
+    .error {
+      color: #ae0000;
+    }
+
+  </style>
+
+  <body style="background-color: rgb(255, 255, 255);">
+    <button class="btn" id="exit"><i class="fa fa-home"></i><a href="home.html" style="text-decoration:none;"> Home</a></button>
+    <div class="headers">
+      <h1 class="p1">Poll+</h1>
+    </div>
+    <div class="time">Time Left: <span id="timer"></span></div>
+    <div class="inputid">
+      <label for="computation_id">ID </label><input type="text" id="computation_id" value=""></input><br /><br />
+      <label for="users_id">User ID </label><input type="text" id="users_id" value=""></input><br /><br />
+
+    </div>
+    <div class="connectbutton">
+      <a class="button" id="connectButton" onclick="connect();">Connect</a>
+    </div>
+
+    <br /><br />
+    <div id="myDiv" style="display:none;">
+
+      <div class="polloptions">
+        <h1 class="poll-name">Error: Poll name has not loaded</h1>
+        <label class="container">
+          <h4 id="cn-1" class="cn">Error: Voting option has not loaded</h4>
+          <input type="radio" checked="checked" name="radio">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">
+          <h4 id="cn-2" class="cn">Error: Voting option has not loaded</h4>
+          <input type="radio" name="radio">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">
+          <h4 id="cn-3" class="cn">Error: Voting option has not loaded</h4>
+          <input type="radio" name="radio">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">
+          <h4 id="cn-4" class="cn">Error: Voting option has not loaded</h4>
+          <input type="radio" name="radio">
+          <span class="checkmark"></span>
+        </label>
+      </div>
+      <div class="submitbutton">
+        <a class="button" onclick="submit();" disabled="disabled" id="button">Vote</a>
+      </div>
+    </div>
+    <div class="togglebutton">
+      <label class="switch">
+        <input type="checkbox" checked="checked" id="revealButton" disabled="disabled" name="answer" onclick="toggleButton();">
+        <span class="slider round"></span>
+      </label>
+    </div>
+
+
+    <div class="output">
+      <div id="output"></div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="client.js"></script>
+  </body>
+
+</html>

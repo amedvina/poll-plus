@@ -1,0 +1,24 @@
+{
+  "name": "poll",
+  "version": "1.0.0",
+  "description": "Poll+ is a voting SMPC web application where the user’s privacy needs are reassured to the maximum",
+  "main": "home.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node server.js"
+  },
+  "jest": {
+    "resetMocks": false,
+    "testEnvironment": "jsdom",
+    "setupFiles": [
+      "jest-localstorage-mock"
+    ]
+  },
+  "author": "Edvina Ambrozeviciute",
+  "license": "ISC",
+  "devDependencies": {
+    "jest-environment-jsdom": "^28.0.2",
+    "jest-localstorage-mock": "^2.4.21",
+    "mocha": "^9.2.2"
+  }
+}
